@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+    hapi:
+        build: .
+        ports:
+            - "8080:80"
+        labels:
+            com.microsoft.acs.dcos.marathon.vhost: peterjacs3agents.westus.cloudapp.azure.com:8080
